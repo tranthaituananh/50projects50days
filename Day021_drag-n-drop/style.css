@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: steelblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.empty {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border: solid 3px black;
+}
+
+.fill {
+    background-image: url('https://source.unsplash.com/random/200x200');
+    height: 195px;
+    width: 195px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+}
